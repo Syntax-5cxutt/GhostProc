@@ -30,5 +30,28 @@ Entrambe le funzionalità richiedono esecuzione da **amministratore**.
 
 ---
 
-## 🧩 Struttura del Progetto
 
+### 🔧 Requisiti
+
+- Windows Driver Kit (WDK)
+- Visual Studio con supporto WDK
+- Test mode attivato (`bcdedit /set testsigning on`)
+- Esecuzione come Administrator
+
+### 🏗️ Build
+
+1. Apri Visual Studio come amministratore
+2. Carica il progetto WDK
+3. Compila in modalità `x64` / `Release`
+4. Firma il driver (o attiva Test Mode)
+5. Installa con `OSRLoader` o `sc create`
+
+---
+
+## 🧪 Utilizzo
+
+1. Carica il driver (`GhostProc.sys`)
+2. Esegui il client come amministratore:
+
+```bash
+GhostProcClient.exe
