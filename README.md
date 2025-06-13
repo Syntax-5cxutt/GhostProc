@@ -53,5 +53,3 @@ Entrambe le funzionalità richiedono esecuzione da **amministratore**.
 1. Carica il driver (`GhostProc.sys`)
 2. Esegui il client come amministratore:
 
-```bash
-GhostProcClient.exe
