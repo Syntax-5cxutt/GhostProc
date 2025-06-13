@@ -88,7 +88,7 @@ int main()
     scanf("%d", &choice);
 
     if (choice == 1) {
-        ULONG srcPid = 4;  // PID fisso a 4, non si chiede più
+        ULONG srcPid = 4;  
         ULONG tgtPid;
         printf("PID target (es: cmd.exe): ");
         scanf("%lu", &tgtPid);
